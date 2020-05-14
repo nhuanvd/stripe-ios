@@ -86,6 +86,8 @@
             case STPPaymentMethodTypeGiropay:
                 XCTAssertEqualObjects(string, @"giropay");
                 break;
+            case STPPaymentMethodTypeAlipay:
+                XCTAssertEqualObjects(string, @"alipay");
             case STPPaymentMethodTypeUnknown:
                 XCTAssertNil(string);
                 break;
