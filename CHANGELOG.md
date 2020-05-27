@@ -1,3 +1,6 @@
+## ???
+* `pkPaymentErrorForStripeError` no longer returns PKPaymentUnknownErrors. Instead, it returns the original NSError back, resulting in dismissal of the Apple Pay sheet.
+
 ## 19.2.0 2020-05-01
 * Adds ability to attach shipping details when confirming PaymentIntents [#1558](https://github.com/stripe/stripe-ios/pull/1558)
 * `STPApplePayContext` now provides shipping details in the `applePayContext:didCreatePaymentMethod:paymentInformation:completion:` delegate method and automatically attaches shipping details to PaymentIntents (unless manual confirmation)[#1561](https://github.com/stripe/stripe-ios/pull/1561)
